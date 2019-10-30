@@ -43,10 +43,12 @@ public class WebSocketServerImpl extends WebSocketServer {
 
     public WebSocketServerImpl(int port) {
         super(new InetSocketAddress(port));
+        setReuseAddr(true);
     }
 
     public WebSocketServerImpl(int port, List<Draft> drafts) {
         super(new InetSocketAddress(port), drafts);
+        setReuseAddr(true);
     }
 
     public CallbackContext getCallbackContext() {

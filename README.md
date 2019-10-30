@@ -6,6 +6,9 @@ This is not a background service. When the cordova view is destroyed/terminated,
 
 [CHANGELOG](https://github.com/becvert/cordova-plugin-websocket-server/blob/master/CHANGELOG.md)
 
+## Difference from origin plugin ##
+This version will reuse port on android in case if it is busy (Fix of 'Address already in use' error)
+
 ## Installation ##
 
 In your application project directory:
